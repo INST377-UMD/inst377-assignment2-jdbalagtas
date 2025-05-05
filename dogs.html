@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Dogs - Assignment 2</title>
+    <link rel="stylesheet" href="assignment_2.css" />
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <!-- main content -->
+    <main>
+        <h1>Dog Breeds Carousel</h1>
+
+        <!-- carousel -->
+        <div class="simple-slider" id="dog-carousel"></div>
+
+        <!-- buttons -->
+        <div class="breed-buttons-container" id="breed-buttons-container"></div>
+
+        <!-- breed info-->
+        <div id="breedInfo">
+            <h2 id="breedName">Breed Name</h2>
+            <p><span>Life Span: </span><span id="breedLifeSpan">Loading...</span></p>
+            <p><span>Description: </span><span id="breedDescription">Loading...</span></p>
+        </div>
+    </main>
+
+    <!-- audio commands box -->
+    <div id="audio-box">
+        <h3>Voice Commands</h3>
+        <ul>
+            <li><strong>Say "Hello"</strong>: Greets back!</li>
+            <li><strong>Say "Change the color to &lt;color&gt;"</strong>: Changes the background color.</li>
+            <li><strong>Say "Navigate to &lt;page&gt;"</strong>: Navigates to another page.</li>
+            <li><strong>Say "Load Dog Breed &lt;Dog Breed Name&gt;"</strong>: Displays information about the selected
+                breed.</li>
+        </ul>
+        <button onclick="startAnnyang()">Turn On Audio</button>
+        <button onclick="stopAnnyang()">Turn Off Audio</button>
+    </div>
+
+    <!-- js files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="dogs.js"></script>
+</body>
+
+</html>
