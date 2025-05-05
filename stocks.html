@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Stocks Page - Assignment 2</title>
+    <link rel="stylesheet" href="assignment_2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <!-- main content -->
+    <main>
+        <h1>Stock Lookup</h1>
+        <!-- stock look up -->
+        <input type="text" id="stockInput" placeholder="Enter Stock Ticker (e.g. AAPL)" />
+        <select id="dayRange">
+            <option value="30">30 Days</option>
+            <option value="60">60 Days</option>
+            <option value="90">90 Days</option>
+        </select>
+        <button id="lookupBtn">Lookup</button>
+
+        <canvas id="stockChart" width="400" height="200"></canvas>
+
+        <!-- reddit stocks -->
+        <h2>Top 5 Reddit Stocks (2022-04-03)</h2>
+        <table id="redditTable">
+            <thead>
+                <tr>
+                    <th>Ticker</th>
+                    <th>Comments</th>
+                    <th>Sentiment</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <!-- voice commands -->
+    <div id="audio-controls">
+        <h3>Audio Commands</h3>
+        <p>Try saying:</p>
+        <ul>
+            <li><strong>Say "Hello"</strong>: Greets back!</li>
+            <li><strong>Say "Change the color to &lt;color&gt;"</strong>: Changes the background color.</li>
+            <li><strong>Say "Navigate to &lt;page&gt;"</strong>: Navigates to another page.</li>
+            <li><strong>Say "Lookup &lt;stock&gt;</strong>: Find specific stock.</li>
+        </ul>
+        <button onclick="annyang.start()">Turn On Audio</button>
+        <button onclick="annyang.abort()">Turn Off Audio</button>
+    </div>
+
+    <!-- js file -->
+    <script src="stocks.js"></script>
+</body>
+
+</html>

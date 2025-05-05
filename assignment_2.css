@@ -1,0 +1,186 @@
+/* page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* nav bar */
+nav {
+    background-color: lightslategray;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: lightgray;
+}
+
+/* buttons */
+button, .custom-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    color: black;
+}
+
+/* custom buttons */
+.btn-stocks {
+    background-color: blue;
+}
+
+.btn-stocks:hover {
+    background-color: lightblue;
+}
+
+.btn-dogs {
+    background-color: orange;
+}
+
+.btn-dogs:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.btn-home {
+    background-color: red;
+}
+
+.btn-home:hover {
+    background-color: lightcoral;
+}
+
+/* audio commands box */
+#audio-box, #audio-controls {
+    background-color: lightblue;
+    border-top: 2px solid white;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 700px;
+}
+
+/* quotes */
+#quote-box {
+    margin-top: 2rem;
+}
+
+/* stock chart and table */
+#stockChart {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: lightblue;
+    color: white;
+}
+
+/* dogs page */
+.simple-slider {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.simple-slider img {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* container */
+.breed-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* breed buttons */
+.breed-button {
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.breed-button:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+/* breed info */
+#breedInfo {
+    margin-top: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: none;
+}
+
+#breedInfo h2 {
+    font-size: 24px;
+    color: black;
+}
+
+#breedInfo p {
+    font-size: 16px;
+    color: black;
+}
+
+#breedInfo span {
+    font-weight: bold;
+}
